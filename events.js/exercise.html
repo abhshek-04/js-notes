@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">hellow</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+    // function changeH1(){
+    //     const H1 = document.querySelector('#h1').innerHTML = "bye"
+        
+    // }
+    
+    // function start(){
+    //     const startButton = document.querySelector('#start')
+    //     startButton.addEventListener('click' , function(){
+    //         setTimeout(changeH1 , 1000)
+    //         changeH1( )
+
+    //     })
+    // }
+
+    // function end(){
+    //     const stopButton = document.querySelector('#stop')
+    //     startButton.addEventListener('click' , function(){
+    //       clearInterval(changeH1)
+            
+    //         changeH1( )
+
+    //     })
+    // }
+
+ let intervalId;
+
+    function changeH1() {
+      const h1 = document.querySelector('#h1');
+      h1.innerHTML = "bye " + new Date().toLocaleTimeString(); // for visual change
+    }
+
+    const startButton = document.querySelector('#start');
+    const stopButton = document.querySelector('#stop');
+
+    startButton.addEventListener('click', function() {
+      // run every second
+      intervalId = setInterval(changeH1, 1000);
+    });
+
+    stopButton.addEventListener('click', function() {
+      clearInterval(intervalId);
+    });
+
+
+</script>
+</html>

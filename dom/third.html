@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>third dom</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    // function addLanguage(liText){
+    //    const li = document.createElement('li');
+    //    li.innerHTML = `${liText}`//innerHTML se pura trevese kr rha hai 
+    //    document.querySelector('.language').appendChild(li)
+    // }
+    // addLanguage("python")
+    
+    //optimize approch 
+    function addOptiLanguage(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('jkdfskdf')
+
+
+    //Edit 
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML = "sdf"
+
+    //new way optizise
+
+    const newli = document.createElement('li')
+    newli.textContent = "mojo"
+    // secondLang.replaceWith(newli)
+
+
+    //edit
+    const firstLang = document.querySelector("li:first-child")
+
+    // firstLang.outerHTML = '<li>typescript</li>'
+
+    //remove
+    const lastlang = document.querySelector('li:last-child')
+    // lastlang.remove()
+
+</script>
+</html>

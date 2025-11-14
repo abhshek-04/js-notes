@@ -1,0 +1,43 @@
+# javascript and classes
+
+# OOP programiing paradime (code likhne ka style hai )
+
+
+### Object 
+- collection of  properties and methods
+
+## why use OOP 
+
+
+## parts use OOP 
+Objects literal
+
+
+- constructor function 
+-prototypes
+-classes
+-intances(new, this)
+
+
+## 4 pillars
+-abstraction
+    Hide complex details and show only necessary features.
+
+-encapsulation
+   Data  or functions को एक object/class के अंदर सुरक्षित रखना।
+
+
+-inheritance
+(child class → get parents class property)
+
+
+-polumorphism
+one/same  function → different output
+
+
+| Concept           | Meaning                           | Example                   |
+| ----------------- | --------------------------------- | ------------------------- |
+| **Abstraction**   | Complexity छुपाना                   | Car key + engine hidden  |
+| **Encapsulation** | Data सुरक्षित करना                   | private variables         |
+| **Inheritance**   | दूसरे class की चीज़ें मिलना            | Student → Person          |
+| **Polymorphism**  | Same function, different behavior | Dog.sound() / Cat.sound() |
