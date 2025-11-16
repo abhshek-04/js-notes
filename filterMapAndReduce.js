@@ -1,5 +1,7 @@
 const myNums = [1,2,3,4,5,6,7,8,9]
 
+// Use filter() when you want to keep/remove values
+
 const newNums = myNums.filter( (item)=>{
     return item > 4
 } )
@@ -25,6 +27,7 @@ myNumers.forEach( (item)=>
         // console.log(typeof item)
         return
     })
+//Use map() when you want to modify values
 
 // const newMuns = myNumers.map ( (num) => num  + 10)
 
